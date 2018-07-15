@@ -6,7 +6,9 @@ buildroot-2018.05.tar.gz
 
 unzip the package. 
 
-copy .config_signage_on_pi2 as .config. 
+goto rasberrypi2 on this project. 
+
+copy config_signage_on_pi2 as .config. 
 ```
 $ make menuconfig 
 ```
