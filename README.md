@@ -16,10 +16,14 @@ $ make menuconfig
   Change setting as your needs, but include fbv for sure. 
 
 open config.txt 
+
   Change setting as your needs. These should be set. 
+
 (defaults) 
+```
 MY_SIGNAGE_DIR=pinkrabbit 
 PICTURE_ONE_SHOT=pink_rabbit.png 
+```
 
 prepare .png file. It should be set one directory above of topdir. 
 
@@ -36,6 +40,7 @@ copy sdcard image.
 # cfdisk /dev/mmcblk0 
 ```
 1 for 50M and bootable would be fine 
+
 2 for 1G would be fairy enough 
 
 ```
@@ -50,7 +55,9 @@ copy sdcard image.
 ```
 
 As it starts, login. 
+
 (Default) 
+
 root:pinkrabbit 
 
 Start oneshot. 
