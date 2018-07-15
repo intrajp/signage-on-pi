@@ -1,14 +1,14 @@
-Download from package from https://git.busybox.net/buildroot. 
+Download the package from https://git.busybox.net/buildroot. 
 
 For now, this package is amenable to us. 
 
 buildroot-2018.05.tar.gz 
 
-unzip the package. 
+untar the package. 
 
 goto rasberrypi2 on this project. 
 
-copy config_signage_on_pi2 as .config. 
+copy config_signage_on_pi2 as .config to the directory buildroot. 
 ```
 $ make menuconfig 
 ```
