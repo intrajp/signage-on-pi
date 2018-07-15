@@ -25,7 +25,7 @@ MY_SIGNAGE_DIR=pinkrabbit
 PICTURE_ONE_SHOT=pink_rabbit.png 
 ```
 
-prepare .png file. It should be set one directory above of topdir. 
+prepare .png file. It should be set one directory above of buildroot topdir. 
 
 copy scripts to board/raspberrypi2. 
 
