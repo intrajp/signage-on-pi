@@ -60,6 +60,10 @@ As it starts, login.
 
 root:pinkrabbit 
 
+As you can see, image pops up conjunction with strings, but don't worry, it's right procedure.
+
+push 'Enter' many times.
+
 Start oneshot. 
 
 ```
