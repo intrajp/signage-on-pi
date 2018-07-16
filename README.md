@@ -15,7 +15,7 @@ $ make menuconfig
 
   Change setting as your needs, but include fbv for sure. 
 
-open pinkrabbit.cnf 
+open pinkrabbit.cfg 
 
   Change setting as your needs. These should be set. 
 

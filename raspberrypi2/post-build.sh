@@ -68,7 +68,7 @@ do
     fi
 done
 cp -af $(find ${PINKRABBIT_PICTURE_DIR} | grep -e "${PICTURE_ONE_SHOT}-[0-9]*.png" | sort) "${TARGET_DIR}/usr/share/${MY_SIGNAGE_DIR}" 
-#cp -f "${STARTUP_SCRIPT}" "${TARGET_DIR}/etc/init.d" 
+cp -f "${STARTUP_SCRIPT}" "${TARGET_DIR}/etc/init.d" 
 cat > "${TARGET_DIR}/usr/bin/${DAEMON_NAME}" << EOF
 #!/bin/bash
 . /etc/${PINKRABBIT_CONFIG}
