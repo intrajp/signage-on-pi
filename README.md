@@ -13,7 +13,7 @@ copy config_signage_on_pi2 as .config to the directory buildroot.
 $ make menuconfig 
 ```
 
-  Change setting as your needs, but include fbv for sure. 
+  Change setting as your needs, like login prompt or password stuff, but include fbv for sure. 
 
 open pinkrabbit.cfg 
 
@@ -47,7 +47,17 @@ $ make all
 ```
 During make, PINKRABBIT_PICTURES directory is made and converted pictures are saved. 
 
-Copy sdcard image. 
+If you want to automatic start, login as root and edit 'cmdline.txt'.
+
+To hide boot message, change "console=tty1" to "console=tty3".
+
+Add "loglevel=3" not to show non-critical messages.
+
+Add "vt.global_cursor_default=0” to stop cursor-blinking.
+
+Add "logo.nologo” not showing kernel logo.
+
+Now you copy sdcard.img to device. 
 
 (example) 
 ```
@@ -74,7 +84,7 @@ As it starts, login.
 
 root:pinkrabbit 
 
-Start oneshot. 
+Start oneshot (when you can login). 
 
 ```
 # show-png-onshot-daemon 
