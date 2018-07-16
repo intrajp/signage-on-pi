@@ -15,25 +15,39 @@ $ make menuconfig
 
   Change setting as your needs, but include fbv for sure. 
 
-open config.txt 
+open pinkrabbit.cnf 
 
   Change setting as your needs. These should be set. 
 
 (defaults) 
 ```
-MY_SIGNAGE_DIR=pinkrabbit 
-PICTURE_ONE_SHOT=pink_rabbit.png 
+MY_SIGNAGE_DIR=pinkrabbit
+PICTURE_ONE_SHOT=pinkrabbit
+#SIZE=640x480
+#SIZE=1024x786
+SIZE=1280x800
+SLEEP_SEC=60
+LOOP=1
 ```
 
-prepare .png file. It should be set one directory above of buildroot topdir. 
+Prepare .png file. It should be set one directory above of buildroot topdir. 
 
-copy scripts to board/raspberrypi2. 
+Directory name should be 'PICTURES_ORIGINAL'
+
+Picture file name should be like '${PICTURE_ONE_SHOT}-01.png'
+
+Make pictures with command 'pdftoppm <inputpdf> ${PICTURE_ONE_SHOT} -png'
+
+Copy pictures to directory 'PICTURES_ORIGINAL'.  
+
+Copy scripts to board/raspberrypi2. 
 
 ```
 $ make all 
 ```
+During make, PINKRABBIT_PICTURES directory is made and converted pictures are saved. 
 
-copy sdcard image. 
+Copy sdcard image. 
 
 (example) 
 ```
@@ -60,15 +74,13 @@ As it starts, login.
 
 root:pinkrabbit 
 
-As you can see, image pops up conjunction with strings, but don't worry, it's right procedure.
-
-push 'Enter' many times.
-
 Start oneshot. 
 
 ```
 # show-png-onshot-daemon 
 ```
+
+Pictures will be shown each for $SLEEP_SEC and loop forever.
 
 Copyright Shintaro Fujiwara 
 
