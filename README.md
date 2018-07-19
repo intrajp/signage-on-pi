@@ -47,7 +47,7 @@ $ make all
 ```
 During make, PINKRABBIT_PICTURES directory is made and converted pictures are saved. 
 
-If you want to automatic start, login as root and edit 'cmdline.txt'.
+If you want to start automatically, login as root and edit 'cmdline.txt'.
 
 To hide boot message, change "console=tty1" to "console=tty3".
 
