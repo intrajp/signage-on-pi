@@ -65,7 +65,7 @@ Now you copy sdcard.img to device.
 ```
 1 for 50M and bootable would be fine 
 
-2 for 1G would be fairy enough 
+2 for 1G would be fairly enough 
 
 ```
 # shred -v /dev/mmcblk0p1 
@@ -87,7 +87,7 @@ root:pinkrabbit
 Start oneshot (when you can login). 
 
 ```
-# show-png-onshot-daemon 
+# show-png-oneshot-daemon 
 ```
 
 Pictures will be shown each for $SLEEP_SEC and loop forever.
