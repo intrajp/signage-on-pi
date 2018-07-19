@@ -47,7 +47,7 @@ $ make all
 ```
 During make, PINKRABBIT_PICTURES directory is made and converted pictures are saved. 
 
-If you want to automatic start, login as root and edit 'cmdline.txt'.
+If you want to start automatically, login as root and edit 'cmdline.txt'.
 
 To hide boot message, change "console=tty1" to "console=tty3".
 
@@ -65,7 +65,7 @@ Now you copy sdcard.img to device.
 ```
 1 for 50M and bootable would be fine 
 
-2 for 1G would be fairy enough 
+2 for 1G would be fairly enough 
 
 ```
 # shred -v /dev/mmcblk0p1 
@@ -87,7 +87,7 @@ root:pinkrabbit
 Start oneshot (when you can login). 
 
 ```
-# show-png-onshot-daemon 
+# show-png-oneshot-daemon 
 ```
 
 Pictures will be shown each for $SLEEP_SEC and loop forever.
