@@ -1,0 +1,14 @@
+#!/bin/bash
+. /etc/pinkrabbit.cfg
+string=$(find /usr/share/${MY_SIGNAGE_DIR} -type f -name "${PICTURE_ONE_SHOT}-[0-9]*.png" | sort)
+string2=$(echo ${string} | tr " " "," )
+IFS="," read -r -a arr <<< "${string2}"
+
+if [ "${LOOP}" -eq 1 ]; then
+    while :
+    do
+        /usr/bin/fbv --delay 100 --noclear --noinfo "${arr[@]}"
+    done
+else
+    /usr/bin/fbv --delay 100 --noclear --noinfo "${arr[@]}"
+fi
