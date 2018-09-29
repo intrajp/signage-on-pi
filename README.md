@@ -57,6 +57,8 @@ Add "vt.global_cursor_default=0” to stop cursor-blinking.
 
 Add "logo.nologo” not showing kernel logo.
 
+Add "--stretch” to the script line for automatic picture stretching.
+
 Now you copy sdcard.img to device. 
 
 (example) 
