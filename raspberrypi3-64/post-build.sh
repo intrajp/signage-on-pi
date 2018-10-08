@@ -83,7 +83,7 @@ IFS="," read -r -a arr <<< "${string2}"
 if [ "${LOOP}" -eq 1 ]; then
     while :
     do
-        /usr/bin/fbv --delay 100 --noclear --noinfo "${arr[@]}"
+        /usr/bin/fbv --delay 100 --stretch --noclear --noinfo "${arr[@]}"
 EOF
 cat >> "${TARGET_DIR}/usr/bin/${DAEMON_NAME}" << EOF
         sleep ${SLEEP_SEC}
@@ -91,7 +91,7 @@ EOF
 cat >> "${TARGET_DIR}/usr/bin/${DAEMON_NAME}" << "EOF"
     done
 else
-    /usr/bin/fbv --delay 100 --noclear --noinfo "${arr[@]}"
+    /usr/bin/fbv --delay 100 --stretch --noclear --noinfo "${arr[@]}"
 EOF
 cat >> "${TARGET_DIR}/usr/bin/${DAEMON_NAME}" << EOF
     sleep ${SLEEP_SEC}
