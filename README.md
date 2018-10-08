@@ -110,7 +110,7 @@ First, multiply startsector number by 512 and get offset number.
 
 On above example, goes like this.
 
-So, offset number should be 1*512=512 and 65536*512=33554944
+So, offset number should be 1 multiply 512=512 and 65536 multiply 512=33554944
 
 (example)
 ```
