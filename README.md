@@ -45,6 +45,15 @@ Copy pictures to directory 'PICTURES_ORIGINAL'.
 
 Copy scripts to board/raspberrypi2. 
 
+The config file retrieves kernel from git repository.
+
+If you want to build your own kernel, and if your own kernel resides in /home/intrajp/linux,
+
+Edit local.mk in top of Buildroot like this.
+```
+LINUX_OVERRIDE_SRCDIR = /home/intrajp/linux/
+```
+
 ```
 $ make all 
 ```
