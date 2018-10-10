@@ -129,7 +129,20 @@ So, offset number should be 1 multiply 512=512 and 65536 multiply 512=33554944
 # mount -t ext4 -o loop,offset=33554944 sdcard.img /mnt/sdcard2
 ```
 
-Another hint, add "--stretch” to the script line for automatic picture stretching.
+Another hint for mounting sdcard.img.
+
+Install kpartx into your local machine.
+
+Now, do this.
+
+```
+# kpartx -av sdcard.img 
+# ll /dev/mapper
+# dmsetup info
+# mount /dev/mapper/loop0p1 /mnt/sdcard1
+```
+
+Here's a hint for adjusting picture to screen, add "--stretch” to the script line for automatic picture stretching.
 
 
 Copyright Shintaro Fujiwara 
